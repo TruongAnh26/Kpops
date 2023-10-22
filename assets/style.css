@@ -32,7 +32,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    
+    z-index: 99999;
 }
 
 #nav{
@@ -283,16 +283,18 @@ html{
 .imgnav-items .imgnav-list {
     width: 245px;
     margin-top: 16px;
-    
+    overflow: hidden;
 }
 
 .imgnav-items .tour-img {
     width: 100%;
+    transition: 0.2s;
 }    
 
 .tour-img:hover {
-    opacity: 0.6;
     background-color: #000;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .imgnav-items .tour-head {
@@ -392,6 +394,7 @@ html{
     font-size: 15px;
     padding: 8px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
 #buy-tickets-btn {
@@ -624,6 +627,7 @@ html{
 
     .imgnav-items .imgnav-list {
         width: 100%;
+        overflow: hidden;
     }
 
     .tour-section .imgnav-items {
